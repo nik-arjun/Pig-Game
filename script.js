@@ -64,7 +64,7 @@ btnHold.addEventListener('click', function () {
         document.getElementById(`current--${currPlayer}`).textContent = 0;
         currScore = 0;
         // Check if Player Score is Greater than 100
-        if(finalScore[currPlayer] > 15) {
+        if(finalScore[currPlayer] > 100) {
             document.querySelector(`.player--${currPlayer}`).classList.add('player--winner');
             document.querySelector(`.player--${currPlayer}`).classList.remove('player--active');
             playing = false;
